@@ -1,12 +1,12 @@
 package com.ixeption.ixengine.core.objects;
 
 import com.badlogic.gdx.Gdx;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.objects.components.ConeLightComponent;
 import com.ixeption.ixengine.core.objects.components.PhysicComponent;
 import com.ixeption.ixengine.core.objects.components.PointLightComponent;
 import com.ixeption.ixengine.core.objects.components.RenderComponent;
 import com.ixeption.ixengine.core.physics.PhysicMaterial;
+import com.ixeption.ixengine.ixgame.GameStage;
 import net.dermetfan.gdx.physics.box2d.Breakable;
 
 

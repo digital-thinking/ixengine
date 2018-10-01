@@ -1,4 +1,4 @@
-package com.ixeption.ixengine.bloodbrothers;
+package com.ixeption.ixengine.ixgame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -9,10 +9,10 @@ import com.badlogic.gdx.utils.viewport.ExtendViewport;
  */
 public class IxStartScreen implements Screen {
 
-    private StartStage startStage_;
+    private com.ixeption.ixengine.ixgame.StartStage startStage_;
 
     public IxStartScreen(int width, int height) {
-        startStage_ = new StartStage(new ExtendViewport(width, height));
+        startStage_ = new com.ixeption.ixengine.ixgame.StartStage(new ExtendViewport(width, height));
         Gdx.input.setInputProcessor(startStage_);
 
     }

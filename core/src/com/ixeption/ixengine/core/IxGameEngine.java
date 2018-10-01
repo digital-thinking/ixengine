@@ -6,10 +6,10 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
-import com.ixeption.ixengine.bloodbrothers.IxStartScreen;
 import com.ixeption.ixengine.core.eventhandling.EventDispatcher;
 import com.ixeption.ixengine.core.screen.EngineAccessor;
 import com.ixeption.ixengine.core.screen.IxScreenManager;
+import com.ixeption.ixengine.ixgame.IxStartScreen;
 
 /**
  * Created by Chris on 16.05.2014.

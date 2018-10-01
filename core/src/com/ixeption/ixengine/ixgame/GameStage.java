@@ -1,4 +1,4 @@
-package com.ixeption.ixengine.bloodbrothers;
+package com.ixeption.ixengine.ixgame;
 
 import aurelienribon.tweenengine.TweenManager;
 import com.badlogic.gdx.Gdx;

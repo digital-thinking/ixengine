@@ -4,11 +4,11 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Event;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.eventhandling.events.LevelEvent;
 import com.ixeption.ixengine.core.objects.GameObject;
 import com.ixeption.ixengine.core.objects.GameObjectFactory;
 import com.ixeption.ixengine.core.physics.PhysicMaterial;
+import com.ixeption.ixengine.ixgame.GameStage;
 
 public class LevelEventHandler implements EventHandler {
 

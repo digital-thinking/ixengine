@@ -1,4 +1,4 @@
-package com.ixeption.ixengine.bloodbrothers;
+package com.ixeption.ixengine.ixgame;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;

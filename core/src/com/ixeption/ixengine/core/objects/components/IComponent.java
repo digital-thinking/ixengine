@@ -1,7 +1,7 @@
 package com.ixeption.ixengine.core.objects.components;
 
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.objects.GameObject;
+import com.ixeption.ixengine.ixgame.GameStage;
 
 public interface IComponent {
 

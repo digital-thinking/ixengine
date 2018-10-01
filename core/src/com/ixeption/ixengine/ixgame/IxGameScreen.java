@@ -1,4 +1,4 @@
-package com.ixeption.ixengine.bloodbrothers;
+package com.ixeption.ixengine.ixgame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;

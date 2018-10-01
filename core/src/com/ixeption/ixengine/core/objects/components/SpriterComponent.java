@@ -3,9 +3,9 @@ package com.ixeption.ixengine.core.objects.components;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.brashmonkey.spriter.*;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.objects.GameObject;
 import com.ixeption.ixengine.core.physics.PhysicMaterial;
+import com.ixeption.ixengine.ixgame.GameStage;
 
 import java.util.HashMap;
 import java.util.Iterator;

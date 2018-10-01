@@ -2,9 +2,9 @@ package com.ixeption.ixengine.core.level;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.level.xml.GameObjectContainer;
 import com.ixeption.ixengine.core.objects.GameObject;
+import com.ixeption.ixengine.ixgame.GameStage;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 

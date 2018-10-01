@@ -3,10 +3,10 @@ package com.ixeption.ixengine.core.objects.components;
 import box2dLight.PointLight;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector2;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.IxGameConfig;
 import com.ixeption.ixengine.core.objects.GameObject;
 import com.ixeption.ixengine.core.physics.LightEngine;
+import com.ixeption.ixengine.ixgame.GameStage;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 

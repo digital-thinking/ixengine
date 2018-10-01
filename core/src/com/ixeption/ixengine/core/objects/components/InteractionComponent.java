@@ -2,10 +2,10 @@ package com.ixeption.ixengine.core.objects.components;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.ixeption.ixengine.bloodbrothers.GameStage;
 import com.ixeption.ixengine.core.eventhandling.EventDispatcher;
 import com.ixeption.ixengine.core.eventhandling.events.gui.InteractionEvent;
 import com.ixeption.ixengine.core.objects.GameObject;
+import com.ixeption.ixengine.ixgame.GameStage;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 
