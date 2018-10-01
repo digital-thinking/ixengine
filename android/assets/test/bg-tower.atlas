@@ -1,0 +1,12 @@
+
+bg-tower.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bg-tower
+  rotate: false
+  xy: 1, 1
+  size: 1920, 1200
+  orig: 1920, 1200
+  offset: 0, 0
+  index: -1

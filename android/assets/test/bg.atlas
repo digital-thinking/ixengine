@@ -1,0 +1,12 @@
+
+bg.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BG
+  rotate: false
+  xy: 1, 1
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1

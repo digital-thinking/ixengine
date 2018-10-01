@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="dialogwidget.xsd"
+      skinname="interaction" texturefile="InteractionMenu/interaction.pack"
+      backgroundmusic="" clicksound="InteractionMenu/click.ogg">
+
+
+    <button name="Look" visible="true" state_normal="look" state_mouseover="look"
+            state_clicked="look" width="64" height="64" Xpos="64" Ypos="0"
+            tween="" fadetime="" delaytime="0" repeats="0" event="look"
+            eventtrigger="click" eventdata=""/>
+
+    <button name="Take" visible="true" state_normal="take"
+            state_mouseover="take" state_clicked="take" width="64"
+            height="64" Xpos="124" Ypos="60" tween="" fadetime=""
+            delaytime="0" repeats="0" event="take" eventtrigger="click"
+            eventdata=""/>
+
+    <button name="Use" visible="true" state_normal="use"
+            state_mouseover="use" state_clicked="use" width="64"
+            height="64" Xpos="64" Ypos="120" tween="" fadetime=""
+            delaytime="0" repeats="0" event="use" eventtrigger="click"
+            eventdata=""/>
+
+    <button name="Speak" visible="true" state_normal="speak" state_mouseover="speak"
+            state_clicked="speak" width="64" height="64" Xpos="0" Ypos="64"
+            tween="" fadetime="" delaytime="0" repeats="0" event="speak"
+            eventtrigger="click" eventdata=""/>
+
+
+</Menu>
+
+	
+	

@@ -1,0 +1,110 @@
+
+gameobj1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+jump
+  rotate: false
+  xy: 1, 305
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 1
+jump
+  rotate: false
+  xy: 1, 153
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 2
+jump
+  rotate: false
+  xy: 133, 305
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 3
+jump
+  rotate: false
+  xy: 1, 1
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 4
+jump
+  rotate: false
+  xy: 133, 153
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 5
+jump
+  rotate: false
+  xy: 265, 305
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 6
+jump
+  rotate: false
+  xy: 133, 1
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 7
+walk
+  rotate: false
+  xy: 265, 153
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 1
+walk
+  rotate: false
+  xy: 397, 305
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 2
+walk
+  rotate: false
+  xy: 265, 1
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 3
+walk
+  rotate: false
+  xy: 397, 153
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 5
+walk
+  rotate: false
+  xy: 529, 305
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 6
+walk
+  rotate: false
+  xy: 397, 1
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 7
+walk
+  rotate: false
+  xy: 529, 153
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 4
+idle
+  rotate: false
+  xy: 265, 1
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: 1

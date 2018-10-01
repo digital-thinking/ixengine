@@ -1,0 +1,33 @@
+
+interaction.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+look
+  rotate: false
+  xy: 1, 1
+  size: 76, 73
+  orig: 76, 73
+  offset: 0, 0
+  index: -1
+speak
+  rotate: false
+  xy: 79, 1
+  size: 76, 73
+  orig: 76, 73
+  offset: 0, 0
+  index: -1
+take
+  rotate: false
+  xy: 157, 1
+  size: 76, 73
+  orig: 76, 73
+  offset: 0, 0
+  index: -1
+use
+  rotate: false
+  xy: 235, 1
+  size: 76, 73
+  orig: 76, 73
+  offset: 0, 0
+  index: -1

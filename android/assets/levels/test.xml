@@ -1,0 +1,629 @@
+<level>
+    <gameobject name="Background" height="768.0" width="1280.0" pos_x="0.0" pos_y="0.0" rotation="0.0" visible="true"
+                layer="1" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent" default="bg-tower">
+                <animations class="java.util.ArrayList">
+                    <sprite name="bg-tower" resource="test/bg-tower" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+        </components>
+    </gameobject>
+    <gameobject name="Ground" height="1.0" width="1920.0" pos_x="1.2207031E-4" pos_y="0.0" rotation="0.0" visible="true"
+                layer="5" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="2.1" friction="10.1" restitution="0.31" shapeType="rect" destructable="false"
+                        destruction_type="destroy" normal_max_force="0.0" tangent_max_force="0.0" type="static"/>
+        </components>
+    </gameobject>
+    <gameobject name="Light" height="100.0" width="90.0" pos_x="400.0" pos_y="600.0" rotation="90.0" visible="true"
+                layer="5" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PointLightComponent" rays="256"
+                        distance="1000.0" colorHex="FFFFAAAA" xrayLight="false" staticLight="false" softLight="false"
+                        softLenght="2.5"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="100.0" width="100.0" pos_x="54.500534" pos_y="2.3749123" rotation="2.1956298"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent" default="glass">
+                <animations class="java.util.LinkedList">
+                    <sprite name="glass" resource="textures/boxes" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="2.8" friction="0.9" restitution="0.65" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="20.0" tangent_max_force="20.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Rect" height="20.0" width="200.0" pos_x="-5187.379" pos_y="-92332.03" rotation="-520.72406"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent" default="bricks">
+                <animations class="java.util.LinkedList">
+                    <sprite name="bricks" resource="textures/boxes" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="0.5" friction="0.4" restitution="0.6" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="10.0" tangent_max_force="10.0" type="dynamic"/>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.ConeLightComponent" rays="512"
+                        distance="500.0" colorHex="440000FF" coneDegree="70.0" directionDegree="-90.0"
+                        parentRotation="true" xrayLight="false" staticLight="true" softLight="true" softLenght="10.0"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="100.0" width="50.0" pos_x="153.99426" pos_y="3.6796227" rotation="2.2097278"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent" default="metal">
+                <animations class="java.util.LinkedList">
+                    <sprite name="metal" resource="textures/boxes" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="2.8" friction="0.9" restitution="0.65" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="20.0" tangent_max_force="20.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="100.0" width="50.0" pos_x="272.50397" pos_y="6.0670624" rotation="41.90486"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent" default="metal">
+                <animations class="java.util.LinkedList">
+                    <sprite name="metal" resource="textures/boxes" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="2.8" friction="0.9" restitution="0.65" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="20.0" tangent_max_force="20.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="508.22046" pos_y="0.23859406" rotation="-360.07593"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="458.71454" pos_y="0.48439407" rotation="-0.012524659"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="406.25323" pos_y="34.31449" rotation="40.160057"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="357.56006" pos_y="10.64447" rotation="47.69157"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="204.88858" pos_y="78.3578" rotation="26.015022"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="322.99365" pos_y="48.748466" rotation="-48.090633"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="584.0435" pos_y="-0.007013321" rotation="-179.60785"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="925.3077" pos_y="0.77950287" rotation="-720.2302"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="370.38174" pos_y="73.55716" rotation="-58.588562"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="514.22107" pos_y="49.258743" rotation="-180.21008"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="565.02966" pos_y="48.67585" rotation="-88.43036"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="219.62123" pos_y="0.5801468" rotation="0.2349824"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="89.01503" pos_y="102.34264" rotation="2.0793352"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="-773.3539" pos_y="-93068.766" rotation="2471.2898"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="-3432.0503" pos_y="-94417.54" rotation="3732.922"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="157.16052" pos_y="111.05812" rotation="-65.93057"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="-2401.1033" pos_y="-93324.46" rotation="2405.66"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="454.64783" pos_y="60.181084" rotation="50.843613"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="864.9002" pos_y="2.921238" rotation="-84.88741"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="782.705" pos_y="0.38378143" rotation="-0.14347675"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="683.22656" pos_y="5.002228" rotation="1.4656068"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="732.5352" pos_y="11.395626" rotation="91.555244"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="633.8469" pos_y="0.90618134" rotation="1.2635239"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="684.7694" pos_y="57.21058" rotation="8.03229"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="662.6245" pos_y="104.212296" rotation="7.272002"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="913.12427" pos_y="50.544067" rotation="-180.68794"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="612.8852" pos_y="98.99122" rotation="4.128095"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="713.9425" pos_y="126.1154" rotation="-154.18639"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="616.28033" pos_y="50.11756" rotation="3.2118225"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="606.85095" pos_y="150.11658" rotation="10.594942"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="539.7903" pos_y="147.53453" rotation="179.40668"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="513.966" pos_y="98.344406" rotation="89.64042"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="657.9191" pos_y="157.955" rotation="-253.64948"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="465.1479" pos_y="123.93906" rotation="-91.1388"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="411.9215" pos_y="99.51607" rotation="120.56578"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="748.63544" pos_y="79.530785" rotation="-41.03955"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="563.042" pos_y="97.79402" rotation="91.70245"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="290.45288" pos_y="85.89058" rotation="221.98454"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+    <gameobject name="Box" height="50.0" width="50.0" pos_x="796.8141" pos_y="59.83159" rotation="-130.6163"
+                visible="true" layer="10" scale_y="1.0" scale_x="1.0">
+        <components class="java.util.LinkedList">
+            <IComponent class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                        default="boxtexture">
+                <animations class="java.util.LinkedList">
+                    <sprite name="boxtexture" resource="test/boxtexture" frame_time="0.0" play_mode="static"/>
+                </animations>
+            </IComponent>
+            <IComponent class="com.ixeption.ixengine.core.objects.components.PhysicComponent" radius="0.0"
+                        density="5.4" friction="0.9" restitution="0.4" shapeType="rect" destructable="true"
+                        destruction_type="destroy" normal_max_force="15.0" tangent_max_force="15.0" type="dynamic"/>
+        </components>
+    </gameobject>
+</level>

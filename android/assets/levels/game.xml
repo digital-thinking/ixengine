@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<level>
+
+    <gameobject visible="true" layer="1" name="Background"
+                height="768" pos_x="0" pos_y="0" rotation="0.00" scale_x="1.000"
+                scale_y="1.000" width="1280" touchable="disabled">
+        <components>
+            <renderComponent
+                    class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                    default="bg-tower">
+                <animations>
+                    <animation name="bg-tower" frame_time="0.0" play_mode="static"
+                               resource="test/bg-tower"/>
+                </animations>
+            </renderComponent>
+        </components>
+    </gameobject>
+    <gameobject visible="true" layer="5" name="Ground" height="1"
+                pos_x="0" pos_y="0" rotation="0" scale_x="1.000" scale_y="1.000"
+                width="1920">
+        <components>
+            <physicComponent
+                    class="com.ixeption.ixengine.core.objects.components.PhysicComponent"
+                    density="2.1" friction="1.1" radius="0.0" restitution="0.31" type="static"
+                    shapeType="rect">
+
+            </physicComponent>
+        </components>
+    </gameobject>
+
+    <gameobject visible="true" layer="5" name="Light2" height="100"
+                pos_x="800" pos_y="0" rotation="90.00" scale_x="1.000" scale_y="1.000"
+                width="100" touchable="disabled">
+
+        <components>
+            <pointLightComponent
+                    class="com.ixeption.ixengine.core.objects.components.PointLightComponent"
+                    colorHex="FFFFFFFF" distance="1000.0" rays="256" softLight="false"
+                    staticLight="true" xrayLight="false">
+            </pointLightComponent>
+        </components>
+    </gameobject>
+
+    <gameobject visible="true" layer="5" name="Light" height="100"
+                pos_x="400" pos_y="600" rotation="90.00" scale_x="1.000" scale_y="1.000"
+                width="90" touchable="disabled">
+
+        <components>
+
+            <pointLightComponent
+                    class="com.ixeption.ixengine.core.objects.components.PointLightComponent"
+                    colorHex="FFFFFFFF" distance="1000.0" rays="256" softLight="false"
+                    staticLight="false" xrayLight="false">
+            </pointLightComponent>
+        </components>
+    </gameobject>
+
+    <gameobject name="Box" width="50.0" height="100.0" pos_y="0"
+                pos_x="200.0" rotation="0" visible="true" scale_y="1.0"
+                scale_x="1.0" layer="10">
+        <components class="java.util.LinkedList">
+            <IComponent
+                    class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                    default="metal">
+                <animations class="java.util.LinkedList">
+                    <animation name="metal" frame_time="0" play_mode="static"
+                               resource="textures/boxes"/>
+                </animations>
+            </IComponent>
+            <IComponent
+                    class="com.ixeption.ixengine.core.objects.components.PhysicComponent"
+                    radius="0.0" density="2.8" friction="0.9" restitution="0.65"
+                    shapeType="rect" type="dynamic" destructable="true"
+                    destruction_type="destroy" normal_max_force="20.0f" tangent_max_force="20.0f"/>
+        </components>
+    </gameobject>
+
+    <gameobject name="Box" width="50.0" height="100.0" pos_y="0"
+                pos_x="350.0" rotation="0" visible="true" scale_y="1.0"
+                scale_x="1.0" layer="10">
+        <components class="java.util.LinkedList">
+            <IComponent
+                    class="com.ixeption.ixengine.core.objects.components.RenderComponent"
+                    default="metal">
+                <animations class="java.util.LinkedList">
+                    <animation name="metal" frame_time="0" play_mode="static"
+                               resource="textures/boxes"/>
+                </animations>
+            </IComponent>
+            <IComponent
+                    class="com.ixeption.ixengine.core.objects.components.PhysicComponent"
+                    radius="0.0" density="2.8" friction="0.9" restitution="0.65"
+                    shapeType="rect" type="dynamic" destructable="true"
+                    destruction_type="destroy" normal_max_force="20.0f" tangent_max_force="20.0f"/>
+        </components>
+    </gameobject>
+
+
+</level>
